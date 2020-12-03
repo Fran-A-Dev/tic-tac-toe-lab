@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Title -->
+    <title>Tic Tac Toe JS Game</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<!-- Body -->
+
+<body onload="startGame();">
+    <!-- CONTAINER -->
+    <div class="container">
+        <div class="row">
+            <!-- HEADING -->
+            <h1>Fran The Man's JS Tic Tac Toe Game</h1>
+        </div>
+        <div class="row">
+            <!-- "X's start first!",
+                "It is O's turn",
+                "It is X's Turn"
+                "Oops, pick a different square!"
+                "Congratulations ___'s, you win!" 
+                "___'s already won!" -->
+            <h3 id="turnMessage"> 
+
+            </h3>
+        </div>
+        <div id="board">
+            <!-- TOP ROW -->
+            <div id="topRow" class="row">
+                <div id="square1" class="top left square" onCLick="nextMove(this)"></div>
+                <div id="square2" class="top middle square" onCLick="nextMove(this)"></div>
+                <div id="square3" class="top right square" onCLick="nextMove(this)"></div>
+            </div>
+            <!-- MIDDLE ROW -->
+            <div id="middleRow" class="row">
+                <div id="square4" class="middle left square" onCLick="nextMove(this)"></div>
+                <div id="square5" class="middle center square" onCLick="nextMove(this)"></div>
+                <div id="square6" class="middle right square" onCLick="nextMove(this)"></div>
+            </div>
+            <!-- BOTTOM ROW -->
+            <div id="bottomRow" class="row">
+                <div id="square7" class="bottom left square" onCLick="nextMove(this)"></div>
+                <div id="square8" class="bottom middle square" onCLick="nextMove(this)"></div>
+                <div id="square9" class="bottom right square" onCLick="nextMove(this)"></div>
+            </div>
+        </div>
+        <div class="row">
+            <!-- BUTTON -->
+            <button id="refreshBtn" onClick="startGame()">Play again?</button>
+        </div>
+    </div>
+
+    
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <!-- App JS -->
+    <script src="app.js"></script>
+</body>
+</html>
